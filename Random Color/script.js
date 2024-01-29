@@ -28,3 +28,16 @@ divColor.style.backgroundColor = hexColor;
 
 const button = document.querySelector("#myButton");
 button.addEventListener("click",updateColor);
+
+const copyBt = document.getElementById("copyBt");
+copyBt.addEventListener("click",copyText);
+
+function copyText() {
+   let text = document.getElementById("context");
+   let timeElement = document.createElement("input");
+   timeElement.value = text.innerText;
+   document.body.appendChild(timeElement);
+   timeElement.select();
+   document.execCommand("copy");
+   document.body.removeChild(timeElement);
+}

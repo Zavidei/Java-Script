@@ -44,3 +44,13 @@ button{
 button:hover{
     background-color: #cfecd0;
 }
+
+img{
+    width: 40px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
