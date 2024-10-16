@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="editor">
+        <div class="toolbar">
+            <input type="file" class="fileInput">
+            <div class="mainButton">
+                <button class="button">Open File</button>
+                <button class="button">Save File</button>
+            </div>
+            <div class="tools">
+                <select name="fonts" class="fontsFamily">
+                    <option value="Arial">Arial</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Tahoma">Tahoma</option>
+                    <option value="Trebuchet MS">Trebuchet MS</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Garamond">Garamond</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Brush Script MT">Brush Script MT</option>
+                    <option value="Lucida Console">Lucida Console</option>
+                    <option value="Source Code Pro">Source Code Pro</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
+                    <option value="Papyrus">Papyrus</option>
+                </select>
+                <select name="number" class="fontSize">
+                    <option value="1vh">1</option>
+                    <option value="2vh">2</option>
+                    <option value="3vh">3</option>
+                    <option value="4vh">4</option>
+                    <option value="5vh">5</option>
+                    <option value="6vh">6</option>
+                    <option value="7vh">7</option>
+                    <option value="8vh">8</option>
+                </select>
+                <button class="button registor registorHight">A</button>
+                <button class="button registor">a</button>
+                <button class="button registor bolt">Ж</button>
+                <button class="button registor cursiv">К</button>
+                <button class="button registor line">Ч</button>
+                <input type="color" class="colorBackground color" value="#FFFFFF">
+                <input type="color" class="colorText color">
+
+            </div>
+        </div>
+        <div class="textArea" contenteditable="true">
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

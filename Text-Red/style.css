@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.editor {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.textArea {
+    min-height: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    outline: none;
+}
+
+.textArea:focus {
+    border-color: #007bff;
+    background-color: white;
+}
+
+.fileInput {
+    display: none;
+}
+
+.fontSize {
+    width: 40px;
+    height: 22px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.fontsFamily {
+    height: 25px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.registor {
+    background-color: #fff;
+    border: none;
+    color: black;
+    padding: 10px 3px;
+    margin: 0;
+    font-size: 15px;
+}
+
+.registor:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.registorHight {
+    margin-left: 15px;
+}
+
+.bolt {
+    font-weight: bolder;
+    margin-left: 15px;
+}
+
+.cursiv {
+    font-style: italic;
+    margin-left: 3px;
+}
+
+.line {
+    margin-left: 3px;
+    text-decoration: underline;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border:none;
+    cursor: pointer;
+    background-color: #fff;
+
+}
+
+.colorBackground {
+    margin-left: 15px;
+}
+
+
