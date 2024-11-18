@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paint for DZ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="controls">
+    <input type="color" id="colorPicker" value="#000000">
+    <input type="range" id="lineWidth" min="1" max="10" value="2">
+    <button id="clearCanvas">Очистить</button>
+    <button id="fillShapeButton">Залить</button>
+    <button id="downloadButton">Скачать изображение</button>
+    <input type="file" id="uploadButton" accept="image/*">
+
+    <!-- Кнопки для рисования фигур -->
+    <button id="drawSquareButton">Нарисовать квадрат</button>
+    <button id="drawCircleButton">Нарисовать круг</button>
+    <button id="drawTriangleButton">Нарисовать треугольник</button>
+    <button id="bezierButton">Рисовать кривую Безье</button>
+
+  </div>
+
+  <canvas id="paintCanvas" width="800" height="600"></canvas>
+
+  <script src="main.js"></script>
+</body>
+</html>

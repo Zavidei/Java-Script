@@ -15,6 +15,40 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tab-buttons {
+    display: flex;
+}
+
+.tab-buttons button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+}
+
+.tab-buttons button.active {
+    background-color: #0056b3;
+}
+
+.add-tab {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
 .toolbar {
     margin-bottom: 10px;
     display: flex;
@@ -103,14 +137,49 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border:none;
+    border: none;
     cursor: pointer;
     background-color: #fff;
-
 }
 
 .colorBackground {
     margin-left: 15px;
 }
 
+.search-bar {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
 
+.search-input {
+    width: 200px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-direction {
+    margin-right: 10px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.search-button {
+    padding: 5px 10px;
+}
+
+.replace {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.replace-input {
+    width: 200px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

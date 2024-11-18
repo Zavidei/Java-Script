@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <div class="tabs">
+        <button class="add-tab">+</button>
+        <div class="tab-buttons"></div>
+    </div>
+
+
     <div class="editor">
         <div class="toolbar">
             <input type="file" class="fileInput">
@@ -50,15 +56,26 @@
                 <button class="button registor line">Ч</button>
                 <input type="color" class="colorBackground color" value="#FFFFFF">
                 <input type="color" class="colorText color">
-
             </div>
         </div>
-        <div class="textArea" contenteditable="true">
-
+        <div class="tab-content">
         </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search text...">
+            <input type="text" class="replace-input" placeholder="Replace with..." />
+            <select class="search-direction">
+                <option value="forward">Forward</option>
+                <option value="backward">Backward</option>
+            </select>
+            <button class="button search-button">Search</button>
+            <button class="button replace-button replace">Replace</button>
+            <input type="checkbox" class="replace-all" id="replace-all" />
+            <label for="replace-all">ВСЕ</label>
+        </div>
+
     </div>
 
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>
