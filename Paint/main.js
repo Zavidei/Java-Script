@@ -66,6 +66,7 @@ class PaintApp {
 
   clearCanvas() {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    
   }
 }
 
@@ -357,11 +358,21 @@ class ExtendedPaintApp extends AdvancedPaintApp {
     }
   
     clearAll() {
-      super.clearCanvas(); // Очищаем canvas
-      this.bezierCurves = []; // Очищаем все сохраненные кривые
-      this.controlPoints = []; // Очищаем текущие точки кривой
-      this.redrawCanvas();
+      // Очищаем содержимое canvas
+      this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    
+      // Очищаем массивы и сбрасываем точки/фигуры
+      this.shapes = [];
+      this.controlPoints = [];
+      this.bezierCurves = [];
+    
+      // Сбрасываем текущую выбранную точку
+      this.selectedPoint = null;
+    
+      // Перерисовываем canvas
+      this.redrawCanvasContent();
     }
+    
   }
   
   // Инициализация приложения с поддержкой кривых Безье
